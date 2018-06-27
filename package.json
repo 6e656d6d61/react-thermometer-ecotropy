@@ -4,6 +4,10 @@
   "description": "A React thermometer component",
   "main": "lib/index.js",
   "author": "6e656d6d61",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6e656d6d61/react-thermometer-ecotropy"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.1",
@@ -28,5 +32,13 @@
     "presets": [
       "react"
     ]
-  }
+  },
+  "keywords": [
+    "browser",
+    "react",
+    "thermometer",
+    "ecotropy",
+    "temperature",
+    "component"
+  ]
 }

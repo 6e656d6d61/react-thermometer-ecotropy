@@ -1,5 +1,9 @@
 # A React Thermometer Component
 
+## Screenshot
+
+![Example](./imgs/example.png)
+
 ## Install
 
 ```sh
