@@ -276,3 +276,8 @@
       height: 20px;
       background-color: #2196f3;
       border-radius: 50px 50px 0 0; }
+
+      .value {
+        font-weight: bold;
+        margin-top: 40px;
+      }

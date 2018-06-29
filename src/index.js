@@ -21,12 +21,12 @@ class Thermometer extends Component {
         <div className="thermometer__meter">
           <ul className="thermometer__statistics">{stepIntervals}</ul>
           <div style={heightPercent} className="thermometer__mercury">
-            <div className="thermometer__percent-current">{valstr}</div>
             <div className="thermometer__mask">
               <div className="thermometer__bg-color" style={heightBgColor}></div>
             </div>
           </div>
         </div>
+        <p className='value'>{valstr}</p>
       </div>
     )
   }
