@@ -1,6 +1,6 @@
 {
   "name": "react-thermometer-ecotropy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React thermometer component",
   "main": "lib/index.js",
   "author": "6e656d6d61",
