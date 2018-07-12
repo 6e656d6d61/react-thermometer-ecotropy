@@ -13,7 +13,9 @@ class Thermometer extends Component {
     const valstr = this.options.valstr()
     this._createIntervals()
     const stepIntervals = this._createIntervalsUI(this.options.intervals)
- 
+
+    var tooltip = this.options.tooltipValue ? <div className="thermometer__percent-current">{valstr}</div> : <div></div>;
+
     return (
       <div style={height} className={`thermometer ${size} ${theme}`}>
         <div className="thermometer__draw-a"></div>
@@ -21,16 +23,16 @@ class Thermometer extends Component {
         <div className="thermometer__meter">
           <ul className="thermometer__statistics">{stepIntervals}</ul>
           <div style={heightPercent} className="thermometer__mercury">
+            {tooltip}
             <div className="thermometer__mask">
               <div className="thermometer__bg-color" style={heightBgColor}></div>
             </div>
           </div>
         </div>
-        <p className='value'>{valstr}</p>
       </div>
     )
   }
- 
+
   _generateOptions() {
     return {
       theme: () => this.props.theme === 'light' || this.props.theme === 'dark' ? this.props.theme : 'light',
@@ -42,10 +44,11 @@ class Thermometer extends Component {
       height: this.props.height || 200, //default 200
       valstr: () => this.options.value + this.options.format,
       percent: () => this.options.value / this.options.max * 100,
-      intervals: []
+      intervals: [],
+      tooltipValue: this.props.tooltipValue || this.props.tooltipValue === undefined ? true : false
     }
   }
- 
+
   _createIntervals() {
     if (this.options.steps) {
       for (let step = 0; step <= this.options.steps; step++) {

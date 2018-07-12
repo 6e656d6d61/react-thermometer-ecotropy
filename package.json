@@ -16,7 +16,8 @@
   "scripts": {
     "watch": "./node_modules/.bin/webpack --config ./webpack.config.js --mode=development --watch",
     "dev": "./node_modules/.bin/webpack --config ./webpack.config.js --mode=development",
-    "build": "./node_modules/.bin/webpack --config ./webpack.config.js --mode=production"
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js --mode=production",
+    "example": "./node_modules/.bin/webpack --config ./examples/webpack.config.js --mode=production"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

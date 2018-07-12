@@ -41,7 +41,7 @@ render(
 | `format` | `String` | Degrees format | `format="°C"` | '' |
 | `size` | `String` | Thermometer size. Can be small, normal or large | `size="large"` | normal |
 | `height` | `Number` | Thermometer height | `height={300}` | 200 |
-
+| `tooltipValue` | `Boolean` | Display the value | `tooltipValue={true}` | `true` |
 # Note
 
 This component is based on https://github.com/zamarrowski/react-thermometer-component
